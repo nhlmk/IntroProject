@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.928">
+    <testcase classname="Registration Feature" name="Verify that all the specified fields are present on the registration page." time="22.214">
+        <system-out>
+            <![CDATA[Given User is on the homepage of the application............................passed
+When user clicks the registration button top right corner of the web page...passed
+Then user should be able to see the new page................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
