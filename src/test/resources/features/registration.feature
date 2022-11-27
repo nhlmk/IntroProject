@@ -1,3 +1,4 @@
+
 Feature: Registration feature
 
   Scenario: Verify that all the specified fields are present on the registration page.
