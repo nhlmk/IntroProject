@@ -1,6 +1,8 @@
 package com.introProject.stepDefinitions;
 
-import com.introProject.pages.BasePage;
+
+import com.introProject.Pages.BasePage;
+
 import com.introProject.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,20 +13,17 @@ public class RegistrationStepDefinitions {
 
     BasePage basePage = new BasePage();
 
-    @Given("User is on the homepage of the application")
-    public void userIsOnTheHomepageOfTheApplication() {
+    @Given("User give on the home page of the application")
+    public void userGiveOnTheHomePageOfTheApplication() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Amazon.com"));
-
     }
 
-    @When("user clicks the registration button top right corner of the web page")
-    public void userClicksTheRegistrationButtonTopRightCornerOfTheWebPage() {
-
-        basePage.signInButtonTopRightCorner.click();
-
+    @When("User clicks the sign-In button")
+    public void userClicksTheSignInButton() {
+        basePage.SignInButton.click();
     }
 
-    @Then("user should be able to see the new page")
+    @Then("User should be able to see the new page")
     public void userShouldBeAbleToSeeTheNewPage() throws InterruptedException {
 
         Thread.sleep(1000);
